@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ExternalLink, Code, Palette, Smartphone, ArrowRight, Sparkles, Zap, Rocket } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, ExternalLink, Code, Palette, Smartphone, ArrowRight, Sparkles, Zap, Rocket, Server, Database, Cloud, GitBranch, Brain } from 'lucide-react';
 import dp from "../assets/dp.png"
 import llm from "../assets/llm.PNG"
 import tictactoe from "../assets/tictactoe.png"
@@ -52,11 +52,38 @@ const projects = [
    
   ];
 
-  const skills = [
-    { icon: Code, name: "Frontend Dev", desc: "React, Vue, Next.js, HTML, CSS, JavaScript" },
-    { icon: Palette, name: "Backend Dev", desc: "Node.js, Django, Flask, Fast API, PHP, Laravel" },
-    { icon: Smartphone, name: "Languages & AI", desc: "Java, Python, C#, AI, Machine Learning" }
-  ];
+const skills = [
+  {
+    icon: Code,
+    name: "Frontend Development",
+    desc: "React, Vue, Next.js, HTML, CSS, JavaScript"
+  },
+  {
+    icon: Server,
+    name: "Backend Development",
+    desc: "Node.js, Django, Flask, FastAPI, PHP, Laravel"
+  },
+  {
+    icon: Database,
+    name: "Databases",
+    desc: "MySQL, PostgreSQL, MongoDB, SQLite"
+  },
+  {
+    icon: Cloud,
+    name: "Cloud & DevOps",
+    desc: "AWS (EC2, S3), Docker, CI/CD Basics"
+  },
+  {
+    icon: GitBranch,
+    name: "Version Control",
+    desc: "Git, GitHub"
+  },
+  {
+    icon: Brain,
+    name: "AI & Machine Learning",
+    desc: "Machine Learning, AI Integration, Deep Learning Basics"
+  }
+];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white relative overflow-hidden">
